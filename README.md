@@ -52,7 +52,7 @@ The project utilizes the `yfinance` library to download historical stock data fr
 ### Volume and Moving Averages for Apple Stock
 
 ```python
-# ... [previous code]
+
 
 # Save the visualizations
 plt.savefig('linear-relation_google.jpg')
@@ -94,7 +94,7 @@ plt.savefig('Risk-vs-Returns.jpg')
 ### LSTM-Based Stock Price Prediction for Google
 
 ```python
-# ... [previous code]
+
 
 # Training the LSTM model
 regressor = Sequential()
@@ -108,14 +108,14 @@ plt.ylabel('Mean Squared Error')
 plt.legend()
 plt.show()
 
-# ... [previous code]
+
 
 # Making predictions on the test set
 dataset_test = yf.download("GOOG", start, en)
 print('GOT GOOGLES DATA')
 real_stock_price = dataset_test.iloc[:, 1:2].values
 
-# ... [previous code]
+
 
 # Visualizing the results
 plt.plot(real_stock_price, color='red', label='Real Google Stock Price')
@@ -128,7 +128,4 @@ plt.legend()
 dpi_value = 300
 plt.gcf().set_size_inches(10, 8)
 plt.savefig('Pridicted-vs-real_google.jpg')
-```
 
-Feel free to further customize the README based on any additional insights, instructions, or features you'd like to highlight in your project.
-```
